@@ -1,0 +1,21 @@
+{
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDesc__",
+  "version": "0.3",
+  "default_locale": "en",
+
+  "icons": {
+    "128": "icon/icon128.png",
+    "48": "icon/icon48.png"
+  },
+
+  "content_scripts": [{ 
+    "matches": [
+      "http://*.tumblr.com/",
+      "http://*.tumblr.com/?*",
+      "http://*.tumblr.com/page/*"
+    ],
+    "css": ["tumblrhotkeys.css"],
+    "js": ["tumblrhotkeys.js"]
+  }]
+}

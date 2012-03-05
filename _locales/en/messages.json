@@ -1,0 +1,24 @@
+{
+  "extName": {
+    "message": "Tumblr HotKeys",
+    "description": "Extension name."
+  },
+  "extDesc": {
+    "message": "Quickly navigate Tumblr posts and pages with the keyboard.",
+    "description": "Extension description."
+  },
+  "bugEmailSubject": {
+    "message": "Bug report for tumblr hotkeys",
+    "description": "Subject line of a bug report email message."
+  },
+  "bugEmailBody": {
+    "message": "I found a problem while browsing $url$ with Tumblr HotKeys.\n\nPlease take a look at the issue since it prevents me from being able to use this extension the way I would like to.\n\nSincerely,\n\nTumblr HotKeys #1 Fan\n",
+    "description": "Body of a bug report email message.",
+    "placeholders": {
+        "url": {
+            "content": "$1",
+            "example": "http://staff.tumblr.com/page/3"
+        }
+    }
+  }
+}

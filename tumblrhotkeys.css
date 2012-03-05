@@ -1,0 +1,113 @@
+/*
+ * 1. Prefix selectors with an unlikely ID.
+ * 2. Use an HTML namespace to avoid style conflicts.
+ * 3. Use rgba() to generate colors that work with a variety of background
+ *    colors like the tumblr "follow" and "join" buttons do.
+ */
+
+/* set some styles that the browser would provide for standard HTML elements */
+
+th\:div,
+th\:ul,
+th\:li {
+    display: block;
+}
+
+th\:span {
+    display: inline;
+}
+
+th\:strong {
+    font-weight: bold;
+}
+
+th\:a {
+    cursor: pointer;
+}
+
+th\:button {
+    margin: 2px;
+    cursor: pointer;
+}
+
+#-tumblrhotkeys-spark {
+    position: fixed;
+    top: 3px;
+    left: 3px;
+    font-family: 'Lucida Grande', Helvetica, Arial, Geneva, sans-serif;
+    z-index: 9900;
+}
+
+#-tumblrhotkeys-spark .-tumblrhotkeys-state {
+    display: none;
+}
+
+#-tumblrhotkeys-spark .-tumblrhotkeys-btn {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 18px;
+    background-color: rgba(0, 0, 0, 0.4375);
+    color: #fff;
+    font-size: 11px;
+    padding: 0 5px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.375);
+    text-shadow: rgba(0, 0, 0, 0.375) 1px 1px 0;
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-btn:active {
+    /* HACK: otherwise the border is removed on click */
+    border: 1px solid rgba(0, 0, 0, 0.375);
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-off .-tumblrhotkeys-btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.2);
+    text-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+#-tumblrhotkeys-spark .-tumblrhotkeys-help {
+    white-space: nowrap;
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4375);
+    border-radius: 0 5px 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.375);
+    font-size: 11px;
+    line-height: 20px;
+    list-style-type: none;
+    margin: 0 0 0 10px;
+    padding: 3px 3px 5px 3px;
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-help:active {
+    /* HACK: otherwise the border is removed on click */
+    border: 1px solid rgba(0, 0, 0, 0.375);
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-on:hover .-tumblrhotkeys-help {
+    display: block;
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-help th\:a {
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.375) 1px 1px 0;
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-help th\:a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-help th\:strong {
+    display: inline-block;
+    width: 20px;
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-divider {
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-top: 3px;
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-help th\:li {
+    list-style-type: none;
+}
+#-tumblrhotkeys-spark .-tumblrhotkeys-help th\:li:last-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 3px;
+}
