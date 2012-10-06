@@ -18,6 +18,5 @@ Or, if the hotkeys are getting in your way, click on the button to shut them off
 You can report bugs or request features on the project's Github page: http://www.github.com/chrisklaiber/tumblrhotkeys
 
 
-Tumblr icon is copyright artbees: http://artbees.net/artbees-social-icons/
-Keyboard icon is copyright The Working Group: http://blog.twg.ca/2010/11/retina-display-icon-set/
-
+Tumblr icon is copyright artbees: http://artbees.net/artbees-social-icons/<br>
+Keyboard icon is copyright The Working Group: http://blog.twg.ca/2010/11/retina-display-icon-set/<br>
